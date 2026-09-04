@@ -24,8 +24,7 @@ st.write(
     "find suitable jobs, and identify skill gaps."
 )
 
-BASE_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "smarthire")
-
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 # ============================================
 # SKILL LIST
 # ============================================
