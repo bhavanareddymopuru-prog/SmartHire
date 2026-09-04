@@ -97,13 +97,11 @@ if st.button("🚀 Analyze Resume", use_container_width=True):
             )
 
             jobs = pd.read_csv(
-                os.path.join(
-                    BASE_DIR,
-                    "data",
-                    "processed",
-                    "naukri_jobs_processed.csv"
-                )
-            )
+    os.path.join(
+        BASE_DIR,
+        "naukri_jobs_processed.csv.gz"
+    )
+)
 
             # ------------------------------------
             # Career prediction
