@@ -24,7 +24,7 @@ st.write(
     "find suitable jobs, and identify skill gaps."
 )
 
-BASE_DIR = "/content/SmartHire_Final_Backup"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ============================================
 # SKILL LIST
