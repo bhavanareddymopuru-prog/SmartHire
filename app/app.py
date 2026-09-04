@@ -86,15 +86,15 @@ if st.button("🚀 Analyze Resume", use_container_width=True):
         try:
             # Load models only when Analyze is clicked
             classifier = joblib.load(
-                os.path.join(BASE_DIR, "models", "resume_classifier.pkl")
+                os.path.join(BASE_DIR, "resume_classifier.pkl")
             )
 
             resume_tfidf = joblib.load(
-                os.path.join(BASE_DIR, "models", "resume_tfidf.pkl")
+                os.path.join(BASE_DIR, "resume_tfidf.pkl")
             )
 
             job_tfidf = joblib.load(
-                os.path.join(BASE_DIR, "models", "job_tfidf.pkl")
+                os.path.join(BASE_DIR, "job_tfidf.pkl")
             )
 
             jobs = pd.read_csv(
